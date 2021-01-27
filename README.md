@@ -15,3 +15,8 @@ To install NVM and Node, follow the [instructions provided by NVM](https://githu
 ```bash
 brew install nvm
 ```
+
+## Deploying
+This application is built and deployed using [Netlify](https://www.netlify.com/). Opening a pull request to the `main` branch will kick off a build and deploy a preview application for you.
+
+To gain access to this application in Netlify, reach out to maintainer of this project [link](mailto:brian.manley91@gmail.com).
