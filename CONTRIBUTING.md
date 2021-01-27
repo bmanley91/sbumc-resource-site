@@ -8,4 +8,3 @@ Otherwise, open a [GitHub issue](https://github.com/bmanley91/sbumc-resource-sit
 2. Assure that your changes pass linter checks and builds correclty by running `npm run check && npm run build` 
 3. Test your changes by running the application locally with `npm run dev`.
 4. Open a Pull Request from your branch to `main`.
-5. 
