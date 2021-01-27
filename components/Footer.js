@@ -9,7 +9,7 @@ export default function Footer() {
                 To request that resources be added to this page, follow the
                 <Link href='https://github.com/bmanley91/sbumc-resource-site/blob/main/CONTRIBUTING.md'>
                     <a> Contribution Guidelines</a>
-                </Link>.
+                </Link>
             </span>
         </footer>
     );
