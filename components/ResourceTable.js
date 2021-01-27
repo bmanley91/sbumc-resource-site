@@ -1,3 +1,4 @@
+import React from 'react';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
@@ -5,7 +6,7 @@ import { resourceData } from '../data/resources';
 
 const useStyles = makeStyles({
     table: {
-      minWidth: 850,
+        minWidth: 850,
     }
 });
 
@@ -14,7 +15,7 @@ export default function ResourceTable() {
 
     return (
         <TableContainer component={Paper}>
-            <Table className={classes.table} aria-label="resource table">
+            <Table className={classes.table} aria-label='resource table'>
                 <TableHead>
                     <TableRow>
                         <TableCell>Resource</TableCell>
