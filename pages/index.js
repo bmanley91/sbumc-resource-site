@@ -1,23 +1,20 @@
 import Head from 'next/head'
 import Header from '@components/Header'
-import Footer from '@components/Footer'
+import ResourceTable from '@components/ResourceTable'
+
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Next.js Starter!</title>
+        <title>SBUMC Resources</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <Header title="South Bethlehem UMC Team Resources" />
+        <ResourceTable />
       </main>
-
-      <Footer />
     </div>
   )
 }
