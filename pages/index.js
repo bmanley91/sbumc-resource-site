@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import Footer from '@components/Footer';
 import Header from '@components/Header';
 import RolesAccordian from '@components/RolesAccordian';
 import ResourceTable from '@components/ResourceTable';
@@ -19,8 +18,6 @@ export default function Home() {
                 <RolesAccordian />
                 <ResourceTable />
             </main>
-            
-            <Footer />
         </div>
     );
 }
