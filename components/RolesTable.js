@@ -6,8 +6,7 @@ import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles(() => ({
     tableContainer: {
-        margin: '10px',
-        maxWidth: '70vw'
+        margin: '10px'
     }
 }));
 
@@ -15,7 +14,7 @@ export const RolesTable = props => {
     const classes = useStyles();
 
     return (
-        <div className={classes.roles}>
+        <div className={classes.tableContainer}>
             <TableContainer component={Paper}>
                 <Table aria-label='resource table'>
                     <TableHead>
