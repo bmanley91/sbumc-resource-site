@@ -34,7 +34,7 @@ const RolesAccordian = () => {
                     id="panel1a-header"
                 >
                     <Typography className={classes.heading}>
-                        {'Who\'s doing what next Sunday?'}
+                        {`Who's doing what next Sunday (${nextSunday})?`}
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
