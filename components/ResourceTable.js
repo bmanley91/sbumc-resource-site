@@ -3,26 +3,28 @@ import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from
 import Paper from '@material-ui/core/Paper';
 import { resourceData } from '../data/resources';
 
-
 export default function ResourceTable() {
     return (
-        <TableContainer component={Paper}>
-            <Table aria-label='resource table'>
-                <TableHead>
-                    <TableRow>
-                        <TableCell>Resource</TableCell>
-                        <TableCell>Description</TableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {resourceData.map(row => (
-                        <TableRow key={row.name}>
-                            <TableCell component="a" href={row.link}>{row.name}</TableCell>
-                            <TableCell>{row.description}</TableCell>
+        <>
+            <h2>Helpful Links</h2>
+            <TableContainer component={Paper}>
+                <Table aria-label='resource table'>
+                    <TableHead>
+                        <TableRow>
+                            <TableCell>Resource</TableCell>
+                            <TableCell>Description</TableCell>
                         </TableRow>
-                    ))}
-                </TableBody>
-            </Table>
-        </TableContainer>
+                    </TableHead>
+                    <TableBody>
+                        {resourceData.map(row => (
+                            <TableRow key={row.name}>
+                                <TableCell component="a" href={row.link}>{row.name}</TableCell>
+                                <TableCell>{row.description}</TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </TableContainer>
+        </>
     );
 }
