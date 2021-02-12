@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     },
     accordianWrapper: {
         marginBottom: '10px',
-        width: '100%'
+        maxWidth: '80vw'
     }
 }));
 

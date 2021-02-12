@@ -11,6 +11,7 @@ body {
 }
 
 main {
+  max-width: 80vw;
   padding-bottom: 5rem;
   flex: 1;
   display: flex;
@@ -27,11 +28,8 @@ code {
 }
 
 .container {
-  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width: 80%; */
-  /* margin-left: 10%; */
 }

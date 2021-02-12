@@ -6,7 +6,8 @@ import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles(() => ({
     tableContainer: {
-        margin: '10px'
+        margin: '10px',
+        maxWidth: '70vw'
     }
 }));
 
@@ -20,8 +21,7 @@ export const RolesTable = props => {
                     <TableHead>
                         <TableRow>
                             <TableCell>Role</TableCell>
-                            <TableCell>Name</TableCell>
-                            <TableCell>Contact</TableCell>
+                            <TableCell>Person</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -30,8 +30,7 @@ export const RolesTable = props => {
                                 map((data, index) => (
                                     <TableRow key={index}>
                                         <TableCell>{data.Role}</TableCell>
-                                        <TableCell>{data.Person}</TableCell>
-                                        <TableCell>{data.Contact}</TableCell>
+                                        <TableCell>{data.Person} - {data.Contact}</TableCell>
                                     </TableRow>
                                 ))
                         }

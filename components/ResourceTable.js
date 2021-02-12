@@ -5,9 +5,9 @@ import { resourceData } from '../data/resources';
 
 export default function ResourceTable() {
     return (
-        <>
+        <div style={{maxWidth: '80vw'}}>
             <h2>Helpful Links</h2>
-            <TableContainer component={Paper}>
+            <TableContainer component={Paper} style={{tableLayout: 'auto'}}>
                 <Table aria-label='resource table'>
                     <TableHead>
                         <TableRow>
@@ -25,6 +25,6 @@ export default function ResourceTable() {
                     </TableBody>
                 </Table>
             </TableContainer>
-        </>
+        </div>
     );
 }
