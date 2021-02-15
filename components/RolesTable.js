@@ -29,7 +29,7 @@ export const RolesTable = props => {
                                 map((data, index) => (
                                     <TableRow key={index}>
                                         <TableCell>{data.Role}</TableCell>
-                                        <TableCell>{data.Person} - {data.Contact}</TableCell>
+                                        <TableCell>{formatPersonCell(data.Person, data.Contact)}</TableCell>
                                     </TableRow>
                                 ))
                         }
@@ -38,6 +38,14 @@ export const RolesTable = props => {
             </TableContainer>
         </div>
     );
+};
+
+const formatPersonCell = (name, contact) => {
+    if (!name && !contact) return 'Not assigned';
+
+    if (name && contact) return `${name} - ${contact}`;
+
+    return name ? name : contact;
 };
 
 RolesTable.propTypes = {
