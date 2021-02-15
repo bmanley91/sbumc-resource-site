@@ -14,4 +14,8 @@ export const resourceData = [{
     name: 'Slack',
     link: 'https://southbethlehemumc.slack.com',
     description: 'The Slack workspace the team uses to communicate.'
+}, {
+    name: 'Weekly Service Assignments',
+    link: 'https://docs.google.com/spreadsheets/d/1h2ilLBuW8vW40ut4kM6uY0orrJ5Q-ZXVnOLxsOqHOnU/edit#gid=0',
+    description: 'A spreadsheet containing who is doing what for upcoming services.'
 }];
