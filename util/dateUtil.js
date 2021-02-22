@@ -6,7 +6,7 @@ export const getFormattedTargetDate = (startDate) => {
     return formatDate(nextSunday);
 };
 
-export const getNextSunday = (startDate) => {
+const getNextSunday = (startDate) => {
     const SUNDAY = 7;
     return moment(startDate).isoWeekday(SUNDAY);
 };

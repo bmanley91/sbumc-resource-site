@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import GoogleSheetsProvider from 'react-db-google-sheets';
 import RolesTable from '@components/RolesTable';
-import { getNextSunday } from '../util/dateUtil';
+import { getFormattedTargetDate } from '../util/dateUtil';
 
 const useStyles = makeStyles((theme) => ({
     heading: {
@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
 const RolesAccordian = () => {
     const classes = useStyles();
 
-    const nextSunday = getNextSunday();
+    const nextSunday = getFormattedTargetDate(new Date());
 
     return (
         <div className={classes.accordianWrapper} style={{marginBottom: '10px'}}>
