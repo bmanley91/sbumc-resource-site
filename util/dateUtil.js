@@ -8,12 +8,6 @@ export const getFormattedTargetDate = (startDate) => {
 
 export const getNextSunday = (startDate) => {
     const SUNDAY = 7;
-    const startDayOfWeek = moment(startDate).isoWeekday();
-
-    if (startDayOfWeek === SUNDAY) {
-        return moment(startDate);
-    }
-
     return moment(startDate).isoWeekday(SUNDAY);
 };
 
