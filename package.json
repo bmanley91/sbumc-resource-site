@@ -6,11 +6,15 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "check": "eslint {components,data,pages}/**/*.js"
+    "check": "eslint {components,data,pages}/**/*.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
+    "moment": "^2.29.1",
     "next": "10.0.4",
     "react": "17.0.1",
     "react-db-google-sheets": "^2.1.1",
@@ -18,7 +22,14 @@
     "with-google-sheets": "^0.1.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.17",
+    "@babel/preset-env": "^7.12.17",
+    "@babel/preset-react": "^7.12.13",
+    "babel-jest": "^26.6.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "eslint": "^7.18.0",
-    "eslint-plugin-react": "^7.22.0"
+    "eslint-plugin-react": "^7.22.0",
+    "jest": "^26.6.3"
   }
 }
