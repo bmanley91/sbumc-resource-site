@@ -1,9 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
-import { resourceData } from '../data/resources';
 
-export default function ResourceTable() {
+const ResourceTable = (props) => {
     return (
         <div style={{maxWidth: '80vw'}}>
             <h2>Helpful Links</h2>
@@ -15,11 +15,11 @@ export default function ResourceTable() {
                             <TableCell>Description</TableCell>
                         </TableRow>
                     </TableHead>
-                    <TableBody>
-                        {resourceData.map(row => (
+                    <TableBody data-testid='resource-table-body'>
+                        {props.tableData.map(row => (
                             <TableRow key={row.name}>
-                                <TableCell component="a" href={row.link}>{row.name}</TableCell>
-                                <TableCell>{row.description}</TableCell>
+                                <TableCell component="a" href={row.link} data-testid={`${row.name}-name`}>{row.name}</TableCell>
+                                <TableCell data-testid={`${row.name}-description`}>{row.description}</TableCell>
                             </TableRow>
                         ))}
                     </TableBody>
@@ -27,4 +27,10 @@ export default function ResourceTable() {
             </TableContainer>
         </div>
     );
-}
+};
+
+ResourceTable.propTypes = {
+    tableData: PropTypes.arrayOf(PropTypes.object)
+};
+
+export default ResourceTable;
