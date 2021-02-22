@@ -1,8 +1,16 @@
-export const getNextSunday = () => {
-    var date = new Date();    
-    date.setDate(date.getDate() + (7 - date.getDay())) % 7;
+import moment from 'moment';
 
-    const formattedDate = (date.getMonth() + 1) + '/' + date.getDate() + '/' +  date.getFullYear().toString().substr(-2);
+export const getFormattedTargetDate = (startDate) => {
+    const nextSunday = getNextSunday(startDate);
 
-    return formattedDate;
+    return formatDate(nextSunday);
+};
+
+const getNextSunday = (startDate) => {
+    const SUNDAY = 7;
+    return moment(startDate).isoWeekday(SUNDAY);
+};
+
+const formatDate = (inputDate) => {
+    return inputDate.format('M/D/YY');
 };
