@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
+import ResourceLink from './ResourceLink';
 
 const ResourceTable = (props) => {
     return (
@@ -18,8 +19,10 @@ const ResourceTable = (props) => {
                     <TableBody data-testid='resource-table-body'>
                         {props.tableData.map(row => (
                             <TableRow key={row.name}>
-                                <TableCell component="a" href={row.link} data-testid={`${row.name}-name`}>{row.name}</TableCell>
-                                <TableCell data-testid={`${row.name}-description`}>{row.description}</TableCell>
+                                <TableCell data-testid={`${row.name}-name-cell`}>
+                                    <ResourceLink name={row.name} link={row.link} />
+                                </TableCell>
+                                <TableCell data-testid={`${row.name}-description-cell`}>{row.description}</TableCell>
                             </TableRow>
                         ))}
                     </TableBody>
