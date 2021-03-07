@@ -18,4 +18,8 @@ export const resourceData = [{
     name: 'Weekly Service Assignments',
     link: 'https://docs.google.com/spreadsheets/d/1h2ilLBuW8vW40ut4kM6uY0orrJ5Q-ZXVnOLxsOqHOnU/edit#gid=0',
     description: 'A spreadsheet containing who is doing what for upcoming services.'
+}, {
+    name: 'Weekly Team Zoom Meeting',
+    link: 'https://us02web.zoom.us/j/81681638201?pwd=WklMTFdodUhiZEUwYUZBRnduZmdJUT09',
+    description: 'A link to the zoom meeting that we use for our weekly team meeting.'
 }];
