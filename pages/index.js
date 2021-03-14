@@ -17,6 +17,7 @@ export default function Home() {
 
             <main>
                 <RolesAccordian />
+                <p>{process.env}</p>
                 <ResourceTable tableData={resourceData}/>
             </main>
         </div>
