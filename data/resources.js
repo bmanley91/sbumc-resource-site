@@ -22,4 +22,8 @@ export const resourceData = [{
     name: 'Weekly Team Zoom Meeting',
     link: 'https://us02web.zoom.us/j/81681638201?pwd=WklMTFdodUhiZEUwYUZBRnduZmdJUT09',
     description: 'A link to the zoom meeting that we use for our weekly team meeting.'
+}, {
+    name: 'Weekly Team Meeting Outline',
+    link: 'https://docs.google.com/document/d/1giYIF9g_C3AmDwFdOZQ-ujyeY1J1X1RNy9tkCpLmmug/edit#heading=h.ul6e6k40jnjw',
+    description: 'A doc outlining the weekly team meeting and how to run it.'
 }];
