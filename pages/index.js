@@ -17,7 +17,7 @@ export default function Home() {
 
             <main>
                 <RolesAccordian />
-                <p>{process.env}</p>
+                {JSON.stringify(process)}
                 <ResourceTable tableData={resourceData}/>
             </main>
         </div>
