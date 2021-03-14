@@ -17,7 +17,7 @@ export default function Home() {
 
             <main>
                 <RolesAccordian />
-                {console.log(process)}
+                {console.log(process.env)}
                 <ResourceTable tableData={resourceData}/>
             </main>
         </div>
