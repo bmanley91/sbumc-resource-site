@@ -1,8 +1,9 @@
 name: Build and Test
 
-on: push
-  branches-ignore: 
-    - 'main'
+on: 
+  push: 
+    branches-ignore: 
+      - 'main'
 
 jobs:
   build:
@@ -14,6 +15,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14.x
+      - run: npm install
       - run: npm run check
       - run: npm run test
       - run: npm run build
