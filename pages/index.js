@@ -17,12 +17,6 @@ export default function Home() {
 
             <main>
                 <RolesAccordian />
-                <p>GOOGLE_SHEETS_API_KEY: {process.env.GOOGLE_SHEETS_API_KEY}</p>
-                <p>GOOGLE_SHEETS_DOC_ID: {process.env.GOOGLE_SHEETS_DOC_ID}</p>
-                <p>NEXT_PUBLIC_REACT_APP_GOOGLE_SHEETS_API_KEY: {process.env.NEXT_PUBLIC_REACT_APP_GOOGLE_SHEETS_API_KEY}</p>
-                <p>NEXT_PUBLIC_REACT_APP_GOOGLE_SHEETS_DOC_ID: {process.env.NEXT_PUBLIC_REACT_APP_GOOGLE_SHEETS_DOC_ID}</p>
-                <p>REACT_APP_GOOGLE_SHEETS_API_KEY: {process.env.REACT_APP_GOOGLE_SHEETS_API_KEY}</p>
-                <p>REACT_APP_GOOGLE_SHEETS_API_KEY: {process.env.REACT_APP_GOOGLE_SHEETS_API_KEY}</p>
                 <ResourceTable tableData={resourceData}/>
             </main>
         </div>
