@@ -17,7 +17,7 @@ export default function Home() {
 
             <main>
                 <RolesAccordian />
-                {JSON.stringify(process)}
+                {console.log(process)}
                 <ResourceTable tableData={resourceData}/>
             </main>
         </div>
