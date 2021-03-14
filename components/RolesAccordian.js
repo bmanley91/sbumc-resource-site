@@ -20,7 +20,19 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
+// I hate this
+const useEnvVars = () => {
+    if (!process.env.REACT_APP_GOOGLE_SHEETS_API_KEY) {
+        process.env.REACT_APP_GOOGLE_SHEETS_API_KEY = process.env.NEXT_PUBLIC_REACT_APP_GOOGLE_SHEETS_API_KEY;
+    }
+    if (!process.env.REACT_APP_GOOGLE_SHEETS_DOC_ID) {
+        process.env.REACT_APP_GOOGLE_SHEETS_DOC_ID = process.env.NEXT_PUBLIC_REACT_APP_GOOGLE_SHEETS_DOC_ID;
+    }
+};
+
 const RolesAccordian = () => {
+    useEnvVars();
+
     const classes = useStyles();
 
     const nextSunday = getFormattedTargetDate(new Date());
