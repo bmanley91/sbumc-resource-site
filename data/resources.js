@@ -26,4 +26,8 @@ export const resourceData = [{
     name: 'Weekly Team Meeting Outline',
     link: 'https://docs.google.com/document/d/1giYIF9g_C3AmDwFdOZQ-ujyeY1J1X1RNy9tkCpLmmug/edit#heading=h.ul6e6k40jnjw',
     description: 'A doc outlining the weekly team meeting and how to run it.'
+}, {
+    name: 'Wishlist',
+    link: 'https://docs.google.com/spreadsheets/d/1WreT30vz-xo68Jl-9hX921ImG3Pqechy5Byux1E0Jbg/edit#gid=0',
+    description: 'A list of things that we want to purchase/acquire for the church.'
 }];
